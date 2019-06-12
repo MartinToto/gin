@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
-import user.domain.User;
-import user.service.UserService;
+//import user.domain.User;
+//import user.service.UserService;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,7 +21,7 @@ import java.util.List;
 @Controller
 @RequestMapping(value = "user")
 public class UserController {
-
+    /*
     @Reference
     private UserService userService;
 
@@ -61,4 +61,5 @@ public class UserController {
         Integer countNum = userService.countUser();
         return countNum;
     }
+    */
 }
