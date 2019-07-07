@@ -13,6 +13,15 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>gin</name>
 	<description>Demo project for Spring Boot</description>
+	<packaging>war</packaging>
+
+	<repositories>
+		<repository>
+			<!-- 告诉Maven可以从这个仓库下载releases和snapshots版本的jar包 -->
+			<id>nexus-snapshot</id>
+			<url>http://192.168.0.160:8083/repository/maven-snapshots/</url>
+		</repository>
+	</repositories>
 
 	<properties>
 		<java.version>1.8</java.version>
@@ -38,9 +47,9 @@
 		</dependency>
 
 		<dependency>
-			<groupId>vodka</groupId>
-			<artifactId>api</artifactId>
-			<scope>vodka-api-1.0-SNAPSHOT.jar</scope>
+			<groupId>com.martin.vodka</groupId>
+			<artifactId>vodka-api</artifactId>
+			<version>1.0.1-SNAPSHOT</version>
 		</dependency>
 
 	</dependencies>
