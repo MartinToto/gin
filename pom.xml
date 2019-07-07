@@ -18,9 +18,14 @@
 	<repositories>
 		<repository>
 			<!-- 告诉Maven可以从这个仓库下载releases和snapshots版本的jar包 -->
-			<id>nexus-snapshot</id>
-			<url>http://192.168.0.160:8083/repository/maven-snapshots/</url>
+			<id>nexus-release</id>
+			<url>http://192.168.0.160:8083/repository/maven-releases/</url>
 		</repository>
+		<!--<repository>-->
+			<!--&lt;!&ndash; 告诉Maven可以从这个仓库下载releases和snapshots版本的jar包 &ndash;&gt;-->
+			<!--<id>nexus-snapshot</id>-->
+			<!--<url>http://192.168.0.160:8083/repository/maven-snapshots/</url>-->
+		<!--</repository>-->
 	</repositories>
 
 	<properties>
@@ -49,7 +54,7 @@
 		<dependency>
 			<groupId>com.martin.vodka</groupId>
 			<artifactId>vodka-api</artifactId>
-			<version>1.0.1-SNAPSHOT</version>
+			<version>1.0.1</version>
 		</dependency>
 
 	</dependencies>
